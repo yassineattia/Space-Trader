@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">CS2340-Space-Trader</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="skill_selection_title">Select Your Skills</string>
+    <string name="skill_selection_pointsLeft">Unassigned Points: %1$d</string>
+    <string name="credit_title">Credit:</string>
+    <string name="credit_icon_pilot">
+        Icons made by Freepik from www.flaticon.com is licensed by CC 3.0 BY
+    </string>
+    <string name="Minus">Minus</string>
+    <string name="skill_pilot">Piloting Skill</string>
+    <string name="credit_icon_plus">Icons made by Hanan from is licensed by CC 3.0 BY</string>
+    <string name="skill_points_current">Skill points: %1$d</string>
+    <string name="skill_fighter">Fighting Skill</string>
+    <string name="skill_trader">Trading Skill</string>
+    <string name="skill_engineer">Engineering Skill</string>
+    <string name="name_hint">Enter Your Name</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="startGame">Start Game</string>
+    <string name="exitGame">EXIT GAME</string>
+    <string name="travel_msg">Are you sure you want to travel to %1$s?</string>
+    <string name="cancel">Cancel</string>
+    <string name="go">Go!</string>
+    <string name="newGame">New Game</string>
+    <string name="loadGame">Load Game</string>
+    <string name="welcome">Welcome to the market! Would you like to buy or sell something?</string>
+    <string name="buy">Buy</string>
+    <string name="sell">Sell</string>
+    <string name="leave">Leave</string>
+    <string name="market">Market</string>
+    <string name="status">Status</string>
+    <string name="save">Save</string>
+    <string name="shipYard">Ship Yard</string>
+    <string name="sure">Sure, how many?</string>
+    <string name="confirm">Confirm</string>
+    <string name="name">Name</string>
+    <string name="currentStatus">Current Status</string>
+    <string name="planet">Planet: </string>
+    <string name="fuel">Fuel: </string>
+    <string name="coins">Coins: </string>
+</resources>

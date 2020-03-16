@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/skill_selection_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skill_selection_title"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/black" />
+
+        <TextView
+            android:id="@+id/skill_selection_pointsLeft"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/skill_selection_pointsLeft"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/skill_pilot_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center"
+                    android:text="@string/skill_pilot"
+                    android:textColor="@android:color/black" />
+
+                <ImageButton
+                    android:id="@+id/skill_pilot_minusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/skill_value_button"
+                    android:contentDescription="@string/Minus"
+                    app:srcCompat="@drawable/ic_minus" />
+
+                <ImageView
+                    android:id="@+id/skill_pilot_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/skill_pilot_value"
+                    android:layout_below="@+id/skill_pilot_label"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toStartOf="@+id/skill_pilot_plusButton"
+                    android:layout_toEndOf="@+id/skill_pilot_minusButton"
+                    android:background="@drawable/skill_icon"
+                    app:srcCompat="@drawable/ic_pilot"
+                    android:contentDescription="@string/skill_pilot"/>
+
+                <ImageButton
+                    android:id="@+id/skill_pilot_plusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/skill_value_button"
+                    android:contentDescription="@string/Minus"
+                    app:srcCompat="@drawable/ic_add" />
+
+                <TextView
+                    android:id="@+id/skill_pilot_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:text="@string/skill_points_current" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/skill_fighter_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center"
+                    android:text="@string/skill_fighter"
+                    android:textColor="@android:color/black"
+                    android:contentDescription="@string/skill_fighter"/>
+
+                <ImageButton
+                    android:id="@+id/skill_fighter_minusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/skill_value_button"
+                    android:contentDescription="@string/Minus"
+                    app:srcCompat="@drawable/ic_minus" />
+
+                <ImageView
+                    android:id="@+id/skill_fighter_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/skill_fighter_value"
+                    android:layout_below="@+id/skill_fighter_label"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toStartOf="@+id/skill_fighter_plusButton"
+                    android:layout_toEndOf="@+id/skill_fighter_minusButton"
+                    android:background="@drawable/skill_icon"
+                    app:srcCompat="@drawable/ic_sword"
+                    android:contentDescription="@string/skill_fighter"/>
+
+                <ImageButton
+                    android:id="@+id/skill_fighter_plusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/skill_value_button"
+                    android:contentDescription="@string/Minus"
+                    app:srcCompat="@drawable/ic_add" />
+
+                <TextView
+                    android:id="@+id/skill_fighter_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:text="@string/skill_points_current" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/skill_trader_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center"
+                    android:text="@string/skill_trader"
+                    android:textColor="@android:color/black"
+                    android:contentDescription="@string/skill_trader"/>
+
+                <ImageButton
+                    android:id="@+id/skill_trader_minusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/skill_value_button"
+                    android:contentDescription="@string/Minus"
+                    app:srcCompat="@drawable/ic_minus" />
+
+                <ImageView
+                    android:id="@+id/skill_trader_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/skill_trader_value"
+                    android:layout_below="@+id/skill_trader_label"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toStartOf="@+id/skill_trader_plusButton"
+                    android:layout_toEndOf="@+id/skill_trader_minusButton"
+                    android:background="@drawable/skill_icon"
+                    app:srcCompat="@drawable/ic_money"
+                    android:contentDescription="@string/skill_trader"/>
+
+                <ImageButton
+                    android:id="@+id/skill_trader_plusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/skill_value_button"
+                    android:contentDescription="@string/Minus"
+                    app:srcCompat="@drawable/ic_add" />
+
+                <TextView
+                    android:id="@+id/skill_trader_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:text="@string/skill_points_current" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/skill_engineer_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:gravity="center"
+                    android:text="@string/skill_engineer"
+                    android:textColor="@android:color/black" />
+
+                <ImageButton
+                    android:id="@+id/skill_engineer_minusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/skill_value_button"
+                    android:contentDescription="@string/Minus"
+                    app:srcCompat="@drawable/ic_minus" />
+
+                <ImageView
+                    android:id="@+id/skill_engineer_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/skill_engineer_value"
+                    android:layout_below="@+id/skill_engineer_label"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toStartOf="@+id/skill_engineer_plusButton"
+                    android:layout_toEndOf="@+id/skill_engineer_minusButton"
+                    android:background="@drawable/skill_icon"
+                    app:srcCompat="@drawable/ic_handyman_tools"
+                    android:contentDescription="@string/skill_engineer"/>
+
+                <ImageButton
+                    android:id="@+id/skill_engineer_plusButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:background="@drawable/skill_value_button"
+                    android:contentDescription="@string/Minus"
+                    app:srcCompat="@drawable/ic_add" />
+
+                <TextView
+                    android:id="@+id/skill_engineer_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:gravity="center"
+                    android:text="@string/skill_points_current" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

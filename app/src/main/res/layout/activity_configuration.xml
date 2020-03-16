@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/configScreen"
+    tools:context=".views.ConfigurationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="59dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <fragment
+                android:id="@+id/name"
+                android:name="edu.gatech.cs2340.spacetrader.views.configfragments.NameFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/skills"
+                android:name="edu.gatech.cs2340.spacetrader.views.configfragments.SkillFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp" />
+
+            <fragment
+                android:id="@+id/difficulty"
+                android:name="edu.gatech.cs2340.spacetrader.views.configfragments.GameDifficultyFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/exit_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exitGame" />
+
+                <Button
+                    android:id="@+id/start_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/startGame" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
